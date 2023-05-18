@@ -11,11 +11,13 @@ import { HeaderComponent } from "./components/header/header.component";
 
 //Pages
 import { HomeComponent } from "./pages/home/home.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
     declarations:[HeaderComponent, HomeComponent, TodoButtonDeleteAllComponent, TodoListComponent, TodoInputAddItensComponent],
     imports:[
-        CommonModule
+        CommonModule,
+        FormsModule
     ]
 })
 export class HomeModule {}
